@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('compile') {
+            steps {
+               bat'javac hello.java'
+            }
+        }
+    }
+    stage('run') {
+            steps {
+              bat'java hello'
+            }
+        }
+    }
+}
