@@ -6,7 +6,7 @@ pipeline {
                 bat'javac hello.java'
             }
         }
-    }
+    
         stage('run') {
             steps {
                 bat'java hello'
